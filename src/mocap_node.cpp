@@ -146,7 +146,6 @@ int main( int argc, char* argv[] )
                   PublishedRigidBody body(i->second);
                   string id = (string&) (i->first);
                   RigidBodyItem item(atoi(id.c_str()), body);
-
                   std::pair<RigidBodyMap::iterator, bool> result = published_rigid_bodies.insert(item);
                   if (!result.second)
                   {
